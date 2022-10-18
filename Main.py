@@ -16,3 +16,8 @@ else:
     if circular_linked_list[0]!=circular_linked_list[i]:
       c+=1
       linkedlist.append(circular_linked_list[i])
+    elif circular_linked_list[0]==circular_linked_list[i]:
+      break
+  print(c)
+  for i in linkedlist:
+    print(i,end=' ')
